@@ -1,0 +1,28 @@
+1. 3 Kesalahan besar yang sering dilakukan oleh QA :
+- Kesalahan tidak menghapus cache browser dan mengecek cookies sebelum memulai tes baru, yang sering kali browser melihat masih berada dalam cache salah satu sesi sebelumnya. Penguji harus lebih memperhatikan cache pada browser dan memeriksa kembali cookie pada browser apakah diaktifkan atau tidak.
+- Kegagalan memperbarui file host. Pengujian yang harus dilakukan pada versi khusus dari file host, perlunya mengecek kembali alamat ip dan nama domain telah diperbarui. 
+- Kesalahan melewatkan pengujian yang berulang, sering kali penguji melakukan pengujian ulang untuk satu bugs dan hanya melihat perbaikan bugs tersebut tanpa melihat kondisi lainnya yang bisa saja menemukan bugs baru, solusinya adalah melakukan pengujian regresi dengan pengujian manual dan pengujian otomatis dilihat dari kebutuhan, penguji masih memerlukan pengujian manual.
+
+
+2. Poin poin untuk membuat skenario tes 
+
+- Simple and transparent.
+Semua langkah pelaksanaanya pun juga harus jelas dan tidak ada yang terlewat. Contoh : untuk melakukan order, harus ‘Login’ terlebih dahulu. Apabila langkah sudah terlalu banyak, login bisa dicantumkan di pre-condition.
+
+-End-user mind.
+Tester bermindset bahwa ia adalah end-user. Untuk itu, kemudahan dalam penggunaan aplikasi juga perlu diperhatikan karena kepuasan konsumen adalah saat aplikasi tidak memiliki kegagalan sistem yang bisa menghambat berjalannya sistem tersebut.
+
+- Don’t assume.
+Tester diharapkan tidak berasumsi bahwa end-user mengerti keseluruhan dari aplikasi. Jadi usahakan susun test case walaupun hal yang termudah.
+
+- 100% Coverage.
+Kemungkinan test case bisa mengcover 100% dari semua aspek dari aplikasi tidaklah mudah. Tetapi apabila tester terus berfokus pada kualitas testing, bukan tidak mungkin 100% coverage bisa tercapai.
+
+-Easy to understand.
+Pemilihan bahasa sewaktu menyusun test case juga harus diperhatikan karena pengguna test case bukan hanya tester saja. Bahasa yang sederhana dan mudah dipahami lebih disukai karena bisa dimengerti bahkan oleh end-user yang mungkin awam.
+
+-Repeatable.
+Artinya test case harus mempunyai kondisi hasil yang sama di seluruh platform yang sedang dites. Contoh : apabila di OS Android setelah login, maka akan tampil halaman my profile maka di iOS pun akan demikian.
+
+- Peer review.
+Meminta tolong pada tester lain atau orang lain untuk me-review test case yang kita susun. Apabila pemilihan bahasa yang dipilih kurang baik dan menimbulkan banyak pertanyaan, tester perlu melakukan perubahan agar test case lebih mudah untuk dipahami
